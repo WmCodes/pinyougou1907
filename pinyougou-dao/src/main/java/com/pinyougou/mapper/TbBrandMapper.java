@@ -2,6 +2,8 @@ package com.pinyougou.mapper;
 
 import com.pinyougou.pojo.TbBrand;
 
+import java.util.List;
+
 public interface TbBrandMapper {
     int deleteByPrimaryKey(Long id);
 
@@ -14,4 +16,6 @@ public interface TbBrandMapper {
     int updateByPrimaryKeySelective(TbBrand record);
 
     int updateByPrimaryKey(TbBrand record);
+
+    List<TbBrand> selectList();
 }

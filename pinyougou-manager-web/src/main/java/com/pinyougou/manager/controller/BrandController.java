@@ -6,6 +6,8 @@ import com.pinyougou.sellergoods.service.BrandService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 /**
  * @author wangmeng
  * @date 2019/7/23
@@ -21,7 +23,7 @@ public class BrandController {
 
 
     @RequestMapping("findOne")
-    public TbBrand findOne(){
+    public List<TbBrand> findOne(){
         return brandService.findOne();
     }
 }

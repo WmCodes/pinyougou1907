@@ -1,6 +1,9 @@
 package com.pinyougou.sellergoods.service;
 
 import com.pinyougou.pojo.TbBrand;
+import entity.PageResult;
+
+import java.util.List;
 
 /**
  * @author wangmeng
@@ -10,6 +13,8 @@ import com.pinyougou.pojo.TbBrand;
 public interface BrandService {
 
 
-    TbBrand findOne();
+    List<TbBrand> findOne();
+
+    PageResult findPage(int pageNum,int pageSize);
 
 }
